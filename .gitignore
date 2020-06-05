@@ -1,0 +1,4 @@
+*.vcxproj.user
+/Debug
+/.vs
+/DirectX11_Tutorial/Debug
