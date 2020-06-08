@@ -31,8 +31,8 @@
 class System
 {
 public:
-    System();
-    System(const System&);
+    explicit System();
+    explicit System(const System&);
     ~System();
 
     bool Initialize();

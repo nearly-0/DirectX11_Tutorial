@@ -7,6 +7,7 @@
 // INCLUDES //
 //////////////
 #include <windows.h>
+#include <memory>
 
 ///////////////////////
 // MY CLASS INCLUDES //
@@ -16,10 +17,10 @@
 /////////////
 // GLOBALS //
 /////////////
-const bool FULL_SCREEN = false;
-const bool VSYNC_ENABLED = true;
-const float SCREEN_DEPTH = 1000.0f;
-const float SCREEN_NEAR = 0.1f;
+constexpr bool FULL_SCREEN = false;
+constexpr bool VSYNC_ENABLED = true;
+constexpr float SCREEN_DEPTH = 1000.0f;
+constexpr float SCREEN_NEAR = 0.1f;
 
 ////////////////////////////////////////////////////////////////////////////////
 // Class name: Graphics
@@ -27,8 +28,8 @@ const float SCREEN_NEAR = 0.1f;
 class Graphics
 {
 public:
-    Graphics();
-    Graphics(const Graphics&);
+    explicit Graphics();
+    explicit Graphics(const Graphics&);
     ~Graphics();
 
     bool Initialize(int, int, HWND);
@@ -37,5 +38,8 @@ public:
 
 private:
     bool Render();
+
+private:
+    std::unique_ptr<Direct3D> m_pDirect3D;
 };
 

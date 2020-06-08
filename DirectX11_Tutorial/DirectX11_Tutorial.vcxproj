@@ -160,11 +160,11 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Direct3D.cpp" />
-    <ClCompile Include="Source\Graphics.cpp" />
-    <ClCompile Include="Source\Input.cpp" />
-    <ClCompile Include="Source\Main.cpp" />
-    <ClCompile Include="Source\System.cpp" />
+    <ClCompile Include="Src\Direct3D.cpp" />
+    <ClCompile Include="Src\Graphics.cpp" />
+    <ClCompile Include="Src\Input.cpp" />
+    <ClCompile Include="Src\Main.cpp" />
+    <ClCompile Include="Src\System.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="DirectX11_Tutorial.rc" />

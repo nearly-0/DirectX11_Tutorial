@@ -33,9 +33,6 @@
     <ClInclude Include="Resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Include\System\System.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Include\Input\Input.h">
       <Filter>Input</Filter>
     </ClInclude>
@@ -45,21 +42,24 @@
     <ClInclude Include="Include\Graphics\Direct3D.h">
       <Filter>Graphics</Filter>
     </ClInclude>
+    <ClInclude Include="Include\System\System.h">
+      <Filter>System</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Graphics.cpp">
+    <ClCompile Include="Src\Graphics.cpp">
       <Filter>Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Input.cpp">
-      <Filter>Input</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\System.cpp">
+    <ClCompile Include="Src\System.cpp">
       <Filter>System</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Direct3D.cpp">
+    <ClCompile Include="Src\Direct3D.cpp">
       <Filter>Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Main.cpp">
+    <ClCompile Include="Src\Input.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
