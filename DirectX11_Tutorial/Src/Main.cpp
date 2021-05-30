@@ -1,10 +1,10 @@
-﻿#ifndef UNICODE
-#define UNICODE
-#endif 
+﻿#include "System/System.h"
 
-#include "System/System.h"
-
-int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR pScmdline, int iCmdshow)
+int WINAPI WinMain(
+    HINSTANCE hInstance, 
+    HINSTANCE hPrevInstance, 
+    PSTR pScmdline, 
+    int iCmdshow)
 {
     bool result;
 

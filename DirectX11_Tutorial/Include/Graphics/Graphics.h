@@ -1,30 +1,18 @@
-////////////////////////////////////////////////////////////////////////////////
-// Filename: Graphics.h
-////////////////////////////////////////////////////////////////////////////////
 #pragma once
 
-//////////////
-// INCLUDES //
-//////////////
 #include <windows.h>
 #include <memory>
 
-///////////////////////
-// MY CLASS INCLUDES //
-///////////////////////
 #include "Graphics/Direct3D.h"
+#include "Graphics/Camera.h"
+#include "Graphics/Model.h"
+#include "Graphics/ColorShader.h"
 
-/////////////
-// GLOBALS //
-/////////////
 constexpr bool FULL_SCREEN = false;
 constexpr bool VSYNC_ENABLED = true;
 constexpr float SCREEN_DEPTH = 1000.0f;
 constexpr float SCREEN_NEAR = 0.1f;
 
-////////////////////////////////////////////////////////////////////////////////
-// Class name: Graphics
-////////////////////////////////////////////////////////////////////////////////
 class Graphics
 {
 public:
@@ -41,5 +29,8 @@ private:
 
 private:
     std::unique_ptr<Direct3D> m_pDirect3D;
+    std::unique_ptr<Camera> m_pCamera;
+    std::unique_ptr<Model> m_pModel;
+    std::unique_ptr<ColorShader> m_pColorShader;
 };
 

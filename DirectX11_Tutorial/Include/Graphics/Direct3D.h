@@ -22,7 +22,7 @@
 // INCLUDES //
 //////////////
 #include <d3d11.h>
-#include <directxmath.h>
+#include <DirectXMath.h>
 
 ////////////////////////////////////////////////////////////////////////////////
 // Class name: Direct3D
@@ -34,7 +34,7 @@ public:
     explicit Direct3D(const Direct3D&);
     ~Direct3D();
 
-    bool Initialize(int, int, bool, HWND, bool, float, float);
+    bool Initialize(int, int, bool, HWND, bool, float, float);                                                                         
     void Shutdown();
 
     void BeginScene(float, float, float, float);
@@ -43,7 +43,7 @@ public:
     ID3D11Device* GetDevice();
     ID3D11DeviceContext* GetDeviceContext();
 
-    void GetProjectionMatrix(DirectX::XMMATRIX&);
+    void GetProjectionMatrix(DirectX::XMMATRIX&);                                                                       
     void GetWorldMatrix(DirectX::XMMATRIX&);
     void GetOrthoMatrix(DirectX::XMMATRIX&);
 

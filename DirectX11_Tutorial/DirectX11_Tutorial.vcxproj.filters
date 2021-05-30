@@ -22,6 +22,9 @@
     <Filter Include="System">
       <UniqueIdentifier>{4a5d94de-eec7-450b-a220-5b27903a0d53}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{62ee1c56-bbbb-4995-bd39-bb1cd74c8310}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -45,6 +48,15 @@
     <ClInclude Include="Include\System\System.h">
       <Filter>System</Filter>
     </ClInclude>
+    <ClInclude Include="Include\Graphics\ColorShader.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Graphics\Model.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Graphics\Camera.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Graphics.cpp">
@@ -61,6 +73,15 @@
     </ClCompile>
     <ClCompile Include="Src\Main.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ColorShader.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Model.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Camera.cpp">
+      <Filter>Graphics</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
